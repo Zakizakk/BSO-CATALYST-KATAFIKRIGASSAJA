@@ -21,7 +21,7 @@ h1, h2, h3, .logo {
 
 .hero-section {
     /* Menambahkan gambar background dengan lapisan overlay warna gelap */
-    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.75)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), 
                 url('MLBBHERO1.jpg');
     background-size: cover;
     background-position: center;
@@ -135,9 +135,10 @@ h1, h2, h3, .logo {
 
 /* 5. Gradient Text khusus Judul Utama */
 .hero-content h1 {
-    background: linear-gradient(to right, #ffffff, #38bdf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00f0ff, 
+               0 0 20px #00f0ff, 
+               0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 .badge {
@@ -182,9 +183,9 @@ h1, h2, h3, .logo {
 }
 
 .btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.7);
-    background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+  transition: all 0.2s ease;
 }
 
 /* 5. Supaya Tampilan Tetap Rapi di Layar HP (Responsif) */
@@ -202,3 +203,167 @@ h1, h2, h3, .logo {
         font-size: 1rem;
     }
 }
+
+/* Efek Timbul untuk Navbar / Card */
+.navbar-timbul {
+  background-color: #2b2d31;
+  border-radius: 10px;
+  
+  /* Garis tipis terang di atas untuk efek pantulan cahaya */
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  
+  /* Shadow untuk efek timbul/melayang */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.3),
+    0 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling Judul Utama Hero biar Tidak Polos */
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  
+  /* Efek Gradient Warna (Kuning Emas ke Biru Cyan / Putih) */
+  background: linear-gradient(135deg, #ffffff 30%, #60a5fa 70%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* Bayangan Cahaya (Glow Effect) */
+  filter: drop-shadow(0 0 20px rgba(96, 165, 250, 0.4));
+}
+
+/* Subtitle Keterangan di Bawah Judul */
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 24px;
+}
+
+/* Tombol Lihat Role biar Menyala Pas Di-hover */
+.hero-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.7);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+/* ==================== SECTION 2: CONTACT & FOOTER ==================== */
+
+/* ==================== SECTION 3: ROLES (FULL FIX) ==================== */
+#roles.bg-light {
+  background-color: #0b0f19 !important; /* Latar belakang dark mode */
+  padding: 60px 8%;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 32px;
+}
+
+/* Horizontal Scroll Container */
+.roles-grid {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 12px 4px 24px 4px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Base Card Timbul */
+.roles-grid .content-card-timbul {
+  flex: 0 0 220px;
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 24px 16px;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ukuran Gambar Ikon PNG */
+.role-icon img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+.role-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.role-card p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* Badge META */
+.role-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Efek Glow Hover Khas Warna MLBB */
+.role-card:nth-child(1):hover { transform: translateY(-6px); border-color: #10b981; box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3); }
+.role-card:nth-child(2):hover { transform: translateY(-6px); border-color: #ef4444; box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3); }
+.role-card:nth-child(3):hover { transform: translateY(-6px); border-color: #a855f7; box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3); }
+.role-card:nth-child(4):hover { transform: translateY(-6px); border-color: #06b6d4; box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3); }
+.role-card:nth-child(5):hover { transform: translateY(-6px); border-color: #eab308; box-shadow: 0 10px 25px rgba(234, 179, 8, 0.3); }
+
+/* Scrollbar Custom */
+.roles-grid::-webkit-scrollbar { height: 6px; }
+.roles-grid::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); border-radius: 10px; }
+.roles-grid::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+
+/* Section Stats */
+.community-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+.stat-item { text-align: center; }
+.stat-item h4 { font-size: 1.6rem; color: #60a5fa; margin-bottom: 2px; }
+.stat-item p { font-size: 0.85rem; color: #94a3b8; }
