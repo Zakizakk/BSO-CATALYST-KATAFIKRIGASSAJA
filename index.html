@@ -49,53 +49,103 @@
     <h2 class="section-title">Role Mobile Legends</h2>
     <p class="section-subtitle">Pilih role andalanmu di Land of Dawn!</p>
 
+    <!-- Filter Buttons -->
+<div class="filter-container">
+  <button class="filter-btn active" data-filter="all">Semua</button>
+  <button class="filter-btn" data-filter="Jungler">Jungler</button>
+  <button class="filter-btn" data-filter="Exp Laner">Exp Laner</button>
+  <button class="filter-btn" data-filter="Mid Laner">Mid Laner</button>
+  <button class="filter-btn" data-filter="Gold Laner">Gold Laner</button>
+  <button class="filter-btn" data-filter="Roamer">Roamer</button>
+</div>
+
     <!-- Grid Card Roles (Bisa Di-scroll ke Samping) -->
     <div class="roles-grid">
       
       <!-- 1. Tank / Support -->
-      <div class="role-card content-card-timbul">
+      <div class="role-card content-card-timbul" data-category="Roamer">
         <div class="role-icon">
           <img src="iconroles/Tank_Icon.webp" alt="Tank Role">
         </div>
         <h3>Tank / Support</h3>
         <p>Inisiator pertempuran, pelindung core utama, dan penguasa crowd control di garis depan.</p>
+        <div class="meta-heroes">
+    <span>Hero META:</span>
+    <div class="hero-tags">
+      <span class="hero-tag">Carmilla</span>
+      <span class="hero-tag">Gloo</span>
+      <span class="hero-tag">Belerick</span>
+    </div>
+  </div>
       </div>
 
       <!-- 2. Fighter -->
-      <div class="role-card content-card-timbul">
+      <div class="role-card content-card-timbul" data-category="Exp Laner">
         <div class="role-icon">
           <img src="iconroles/Fighter_Icon.webp" alt="Fighter Role">
         </div>
         <h3>Fighter</h3>
         <p>Petarung jarak dekat yang tangguh di Exp Lane, seimbang antara damage dan pertahanan.</p>
+        <div class="meta-heroes">
+    <span>Hero META:</span>
+    <div class="hero-tags">
+      <span class="hero-tag">Aulus</span>
+      <span class="hero-tag">Masha</span>
+      <span class="hero-tag">Lukas</span>
+    </div>
+  </div>
       </div>
 
       <!-- 3. Assassin -->
-      <div class="role-card content-card-timbul">
+      <div class="role-card content-card-timbul" data-category="Jungler">
         <span class="role-badge">META</span>
         <div class="role-icon">
           <img src="iconroles/Assassin_Icon.webp" alt="Assassin Role">
         </div>
         <h3>Assassin</h3>
         <p>Eksekutor lincah pemburu mage dan marksman musuh dari semak-semak (Jungler utama).</p>
+        <div class="meta-heroes">
+    <span>Hero META:</span>
+    <div class="hero-tags">
+      <span class="hero-tag">Hirara</span>
+      <span class="hero-tag">Suyou</span>
+      <span class="hero-tag">Nolan</span>
+    </div>
+  </div>
       </div>
 
       <!-- 4. Mage -->
-      <div class="role-card content-card-timbul">
+      <div class="role-card content-card-timbul" data-category="Mid Laner">
         <div class="role-icon">
           <img src="iconroles/Mage_Icon.webp" alt="Mage Role">
         </div>
         <h3>Mage</h3>
         <p>Pemberi burst damage area dari Mid Lane untuk mengontrol alur permainan sejak early game.</p>
+        <div class="meta-heroes">
+    <span>Hero META:</span>
+    <div class="hero-tags">
+      <span class="hero-tag">Zetian</span>
+      <span class="hero-tag">Eudora</span>
+      <span class="hero-tag">Zhuxin</span>
+    </div>
+  </div>
       </div>
 
       <!-- 5. Marksman -->
-      <div class="role-card content-card-timbul">
+      <div class="role-card content-card-timbul" data-category="Gold Laner">
         <div class="role-icon">
           <img src="iconroles/Marksman_Icon.webp" alt="Marksman Role">
         </div>
         <h3>Marksman</h3>
         <p>Ujung tombak tim di Gold Lane dengan damage output mematikan di fase late game.</p>
+        <div class="meta-heroes">
+    <span>Hero META:</span>
+    <div class="hero-tags">
+      <span class="hero-tag">Obsidia</span>
+      <span class="hero-tag">Claude</span>
+      <span class="hero-tag">Moskov</span>
+    </div>
+  </div>
       </div>
 
     </div>
@@ -127,6 +177,36 @@
     <footer>
         <p>&copy; 2026 Land of Dawn Community. All rights reserved.</p>
     </footer>
+
+    <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const roleCards = document.querySelectorAll('.role-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // 1. Ubah class active pada tombol
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // 2. Filter card berdasarkan data-category
+        const filterValue = btn.getAttribute('data-filter');
+
+        roleCards.forEach(card => {
+          const cardCategory = card.getAttribute('data-category');
+          
+          // Memastikan pembandingan tidak masalah walau beda huruf besar/kecil
+          if (
+            filterValue === 'all' || 
+            (cardCategory && cardCategory.trim().toLowerCase() === filterValue.trim().toLowerCase())
+          ) {
+            card.classList.remove('hide');
+          } else {
+            card.classList.add('hide');
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

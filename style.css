@@ -287,11 +287,13 @@ h1, h2, h3, .logo {
 /* Horizontal Scroll Container */
 .roles-grid {
   display: flex;
-  overflow-x: auto;
+  justify-content: safe center; /* Mencegah card di ujung terpotong saat layar sempit */
   gap: 16px;
-  padding: 12px 4px 24px 4px;
+  overflow-x: auto;
+  padding: 15px 20px 25px 20px; /* Memberi ruang di kiri, kanan, atas, dan bawah card */
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Base Card Timbul */
@@ -315,6 +317,13 @@ h1, h2, h3, .logo {
   object-fit: contain;
   margin-bottom: 12px;
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.6));
+}
+
+.role-card {
+  flex: 0 0 200px; /* Ukuran dilepas sedikit jadi 200px biar lebih pas di layar */
+  max-width: 200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .role-card h3 {
@@ -367,3 +376,84 @@ h1, h2, h3, .logo {
 .stat-item { text-align: center; }
 .stat-item h4 { font-size: 1.6rem; color: #60a5fa; margin-bottom: 2px; }
 .stat-item p { font-size: 0.85rem; color: #94a3b8; }
+
+/* Container Hero META di Card */
+.meta-heroes {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.meta-heroes > span {
+  display: block;
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hero-tag {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.hero-tag:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+/* Container Tombol Filter */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+/* Styling Dasar Tombol Filter */
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: rgba(59, 130, 246, 0.2);
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+/* Tombol Aktif / Terpilih */
+.filter-btn.active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border-color: #60a5fa;
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
+}
+
+/* Class untuk Menyembunyikan Card saat Filter Aktif */
+.role-card.hide {
+  display: none !important;
+}
