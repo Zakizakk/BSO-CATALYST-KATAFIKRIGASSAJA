@@ -457,3 +457,97 @@ h1, h2, h3, .logo {
 .role-card.hide {
   display: none !important;
 }
+
+/* ==========================================
+   SECTION 4: CONTACT & FOOTER (Teman 2)
+   ========================================== */
+
+/* Section Contact */
+#contact {
+  padding: 60px 20px;
+  background-color: #0d1117;
+  color: #f0f6fc;
+  text-align: center;
+}
+
+#contact h2, #contact h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+#contact p {
+  color: #8b949e;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
+
+/* Link Sosial Media / Komunitas */
+#contact a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: color 0.2s ease;
+}
+
+#contact a:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+/* Styling Form Sapa Kami */
+#contact form {
+  max-width: 450px;
+  margin: 24px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+#contact button {
+  background: linear-gradient(135deg, #238636, #2ea043);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#contact button:hover {
+  background: linear-gradient(135deg, #2ea043, #3fb950);
+}
+
+/* Footer */
+footer {
+  background-color: #010409;
+  padding: 24px 20px;
+  text-align: center;
+  border-top: 1px solid #21262d;
+  color: #8b949e;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 4px 0;
+}
