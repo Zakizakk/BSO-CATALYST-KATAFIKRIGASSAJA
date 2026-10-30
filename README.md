@@ -1,4 +1,5 @@
 # BSO-CATALYST-KATAFIKRIGASSAJA
+Membuat about yang berisi tentang latar belakang website ini
 
 1. NAMA PROJECT :
   BOCAH LAND OF DOWN
