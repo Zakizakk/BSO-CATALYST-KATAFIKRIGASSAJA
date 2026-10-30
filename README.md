@@ -24,3 +24,17 @@
     a. Muhamad Ragil Heru Jayawardana (Muraru14)
      b. Muhammad Fikri Alamsyah (babikriukkk)
       c. Muhammad Fadhil Nur Zaki (Zakizakk)
+
+## 📷 Dokumentasi Website
+
+### 1. Hero Section
+![Hero Section](Screenshot/HOME.png)
+
+### 2. About Section
+![About Section](Screenshot/ABOUT.png)
+
+### 3. Main Content
+![Main Content](Screenshot/ROLES.png)
+
+### 4. Contact & Footer
+![Contact & Footer](Screenshot/CONTACT.png)
