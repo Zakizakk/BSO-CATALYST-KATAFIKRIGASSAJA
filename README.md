@@ -1,22 +1,22 @@
 # BSO-CATALYST-KATAFIKRIGASSAJA
 
-NAMA PROJECT :
+1. NAMA PROJECT :
   BOCAH LAND OF DOWN
-DESC :
+2. DESC :
   WEBSITE KOMUNITAS BAGI ORANG ORANG YANG MEMILIKI MINAT ATAU HOBI BERMAIN MOBILE LEGEND
-TUJUAN/LATAR BELAKANG PROJECT:
+3. TUJUAN/LATAR BELAKANG PROJECT:
   MEWADAHI ORANG ORANG YANG MEMILIKI KEGEMARAN BERMAIN MOBILE LEGEND
-FITUR/SECTION YANG TERSEDIA:
-  1. Navbar & section hero
-  2. Section Contact & Footer
-  3. Section Main Content
-  4. Section About
-TEKNOLOGI YANG DIGUNAKAN:
+4. FITUR/SECTION YANG TERSEDIA:
+   a. Navbar & section hero
+   b. Section Contact & Footer
+   c. Section Main Content
+   d. Section About
+5. TEKNOLOGI YANG DIGUNAKAN:
   HTML & CSS
-CARA MENJALANKAN WEBSITE SECARA LOKAL:
-RINGKASAN PEMBAGIAN TUGAS DAN KONTRIBUSI ANGGOTA:
-  1. Navbar & section hero (Ragil)
-  2. Section Contact & Footer (Zaki)
-  3. Section Main Content (Ragil)
-  4. Section About (Fikri)
+6. CARA MENJALANKAN WEBSITE SECARA LOKAL:
+7. RINGKASAN PEMBAGIAN TUGAS DAN KONTRIBUSI ANGGOTA:
+   a. Navbar & section hero (Ragil)
+   b. Section Contact & Footer (Zaki)
+   c. Section Main Content (Ragil)
+   d. Section About (Fikri)
 
