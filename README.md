@@ -23,7 +23,7 @@ Membuat about yang berisi tentang latar belakang website ini
 
 9. Anggota:
     a. Muhamad Ragil Heru Jayawardana (Muraru14)
-     b. Muhammad Fikri Alamsyah (babikriukkk)
+     b. Muhamad Fikri Alamsyah (babikriukkk)
       c. Muhammad Fadhil Nur Zaki (Zakizakk)
 
 ## 📷 Dokumentasi Website
