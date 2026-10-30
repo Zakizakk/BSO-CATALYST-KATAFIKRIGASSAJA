@@ -20,4 +20,7 @@
    c. Section Main Content (Ragil)
    d. Section About (Fikri)
 
-Membuat section main yang merupakan isi utama website ini
+9. Anggota:
+    a. Muhamad Ragil Heru Jayawardana (Muraru14)
+     b. Muhammad Fikri Alamsyah (babikriukkk)
+      c. Muhammad Fadhil Nur Zaki (Zakizakk)
