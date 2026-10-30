@@ -20,3 +20,4 @@
    c. Section Main Content (Ragil)
    d. Section About (Fikri)
 
+Membuat section main yang merupakan isi utama website ini
