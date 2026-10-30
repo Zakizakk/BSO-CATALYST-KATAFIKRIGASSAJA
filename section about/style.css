@@ -476,12 +476,12 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  object-fit: cover; /* Memastikan foto tidak gepeng */
+  object-fit: cover; 
   border: 1.5px solid var(--ml-accent-blue);
   box-shadow: 0 0 8px var(--ml-accent-glow);
   flex-shrink: 0;
 }
-/* Container Ikon Sosial Media Developer */
+
 .ml-about__author-socials {
   display: flex;
   align-items: center;
@@ -489,7 +489,7 @@ body {
   margin-top: 6px;
 }
 
-/* Styling Tombol Ikon Sosial Media */
+
 .ml-about__social-link {
   display: inline-flex;
   align-items: center;
