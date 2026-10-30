@@ -401,3 +401,113 @@ body {
     margin-top: 16px;
   }
 }
+/* ==================== DEVELOPER CREDIT (3 PEOPLE) ==================== */
+.ml-about__team {
+  margin-top: 28px;
+}
+
+.ml-about__team-label {
+  display: block;
+  font-family: var(--ml-font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--ml-accent-blue);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Grid Flexbox agar 3 developer tersusun rapi */
+.ml-about__team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.ml-about__author {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 8px 10px;
+  background: rgba(16, 23, 38, 0.6);
+  border: 1px solid var(--ml-border-color);
+  border-radius: 50px;
+  backdrop-filter: blur(8px);
+  transition: var(--ml-transition);
+  flex: 1 1 calc(33.333% - 12px); /* Tampil 3 kolom di layar lebar */
+  min-width: 150px; /* Batas minimum lebar per-kartu di layar HP */
+}
+
+.ml-about__author:hover {
+  border-color: var(--ml-accent-blue);
+  box-shadow: 0 0 15px var(--ml-accent-glow);
+  transform: translateY(-2px);
+}
+
+.ml-about__author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ml-accent-blue) 0%, var(--ml-accent-purple) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #040810;
+  flex-shrink: 0;
+}
+
+.ml-about__author-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.ml-about__author-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ml-text-primary);
+}
+
+.ml-about__author-role {
+  font-size: 0.7rem;
+  color: var(--ml-text-secondary);
+}
+.ml-about__author-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover; /* Memastikan foto tidak gepeng */
+  border: 1.5px solid var(--ml-accent-blue);
+  box-shadow: 0 0 8px var(--ml-accent-glow);
+  flex-shrink: 0;
+}
+/* Container Ikon Sosial Media Developer */
+.ml-about__author-socials {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+/* Styling Tombol Ikon Sosial Media */
+.ml-about__social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--ml-text-secondary);
+  transition: var(--ml-transition);
+  text-decoration: none;
+}
+
+.ml-about__social-link:hover {
+  color: var(--ml-accent-blue);
+  border-color: var(--ml-accent-blue);
+  background: rgba(0, 240, 255, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 0 8px var(--ml-accent-glow);
+}
